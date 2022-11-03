@@ -1,0 +1,81 @@
+button{
+    width: 150px;
+    height: 35px;
+    background-color: dodgerblue;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: skyblue;
+}
+#para{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    transition: width 2s;
+}
+.box:hover{
+    width: 300px;
+}
+.box1{
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        border-radius: 50%;
+    
+}
+.media{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+@media screen and (min-width:300px) and (max-width:100px){
+.media{
+    background-color: coral;
+}
+}
+.ani{
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    border-radius: 3px;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%{
+        background-color: cadetblue;
+        position: relative;
+        top: 0px;
+        left: 100px;
+        border-radius:50% ;
+    }
+    25%{
+        background-color: burlywood;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        border-radius:50% ;
+    }
+    50%{
+        background-color: cornflowerblue;
+        position: relative;
+        top: 100px;
+        left: 0px;
+        border-radius:50% ;
+    }
+    100%{
+        background-color: darkslategray;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        /* border-radius: 50%; */
+    }
+}
